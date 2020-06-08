@@ -76,7 +76,7 @@ class Header extends React.Component {
       [classes.absolute]: absolute,
       [classes.fixed]: fixed
     });
-    const brandComponent = <Link to="/"><Button className={classes.title}><h2>Online Course</h2></Button></Link>;
+    const brandComponent = <Link to="/"><Button className={classes.title}><h2>Drizzle MicroCourses</h2></Button></Link>;
     return (
       <AppBar className={appBarClasses}>
         <Toolbar className={classes.container}>

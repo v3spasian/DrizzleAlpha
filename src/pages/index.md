@@ -1,5 +1,5 @@
 ---
 templateKey: landing-page
-title: Welcome to Online Course
-description: Every landing page needs a small description after the big bold title, that's why we added this text here. Add here all the information that can make you or your product create the first impression.
+title: Welcome to drizzle.dev (alpha)
+description: Get paid while you learn with us through web monetization! Our free micro-courses help you close skill and knowledge gaps in minutes. Complex ideas are pared down to the essentials and wrapped in a rich interface accessible on any device.
 ---

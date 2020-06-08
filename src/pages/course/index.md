@@ -1,5 +1,5 @@
 ---
 templateKey: course-list-page
-title: Course List
-description: Every landing page needs a small description after the big bold title, that's why we added this text here. Add here all the information that can make you or your product create the first impression.
+title: Drizzle MicroCourses
+description: These are microcourses provided by drizzle.dev. Please click on a microcourse to start learning!
 ---
