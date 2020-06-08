@@ -1,0 +1,98 @@
+backend:
+  name: git-gateway
+  branch: master
+  commit_messages:
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    delete: 'Delete {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+    deleteMedia: '[skip ci] Delete “{{path}}”'
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "responsive-web-design" 
+    label: "Responsive Web Design"
+    folder: "src/pages/course/responsive-web-design"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: title
+    sortableFields: ["title", "order"]
+    fields: 
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "course-page"}
+      - {label: Title, name: title, widget: string}
+      - {label: "Weight: should be in 100~999", name: order, widget: number}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "javascript-algorithms-and-data-structuresn" 
+    label: "Javascript algorithms and data structures"
+    folder: "src/pages/course/javascript-algorithms-and-data-structures"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: title
+    sortableFields: ["title", "order"]
+    fields: 
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "course-page"}
+      - {label: Title, name: title, widget: string}
+      - {label: "Weight: should be in 1000~1999", name: order, widget: number}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "front-end-libraries" 
+    label: "Front End Libraries"
+    folder: "src/pages/course/front-end-libraries"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: title
+    sortableFields: ["title", "order"]
+    fields: 
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "course-page"}
+      - {label: Title, name: title, widget: string}
+      - {label: "Weight: should be in 2000~2999", name: order, widget: number}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "data-visualization" 
+    label: "Data Visualization"
+    folder: "src/pages/course/data-visualization"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: title
+    sortableFields: ["title", "order"]
+    fields: 
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "course-page"}
+      - {label: Title, name: title, widget: string}
+      - {label: "Weight: should be in 3000~3999", name: order, widget: number}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "apis-and-microservices" 
+    label: "Apis and Microservices"
+    folder: "src/pages/course/apis-and-microservices"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: title
+    sortableFields: ["title", "order"]
+    fields: 
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "course-page"}
+      - {label: Title, name: title, widget: string}
+      - {label: "Weight: should be in 4000~4999", name: order, widget: number}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "information-security-and-quality-assurance" 
+    label: "Information Security and Quality Assurance"
+    folder: "src/pages/course/information-security-and-quality-assurance"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: title
+    sortableFields: ["title", "order"]
+    fields: 
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "course-page"}
+      - {label: Title, name: title, widget: string}
+      - {label: "Weight: should be in 5000~5999", name: order, widget: number}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "coding-interview-prep" 
+    label: "Coding Interview Prep"
+    folder: "src/pages/course/coding-interview-prep"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: title
+    sortableFields: ["title", "order"]
+    fields: 
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "course-page"}
+      - {label: Title, name: title, widget: string}
+      - {label: "Weight: should be in 6000~6999", name: order, widget: number}
+      - {label: "Body", name: "body", widget: "markdown"}
